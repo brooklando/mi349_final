@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300
+}
+
+body {
+    width: 1465px;
+    margin: 0 auto;
+    padding: 0;
+    background: #001A23;
+    color: #FFFFFF;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/gradient.png);
+    background-position: 0%, 25%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    padding-top: 25px;
+}
+
+.container {
+    padding: 10px, 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hamburg {
+    position: fixed;
+    left: 4%;
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    
+}
+
+.hamburg .bar, .hamburg:after, .hamburg:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0px;
+    transition: 0.8s;
+}
+
+.hamburg.is-active:before{
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburg.is-active:after{
+    transform: rotate(45deg) translate(-9px, -8px);
+    position: relative;
+    z-index: 100;
+}
+
+.hamburg.is-active .bar {
+    opacity: 0;
+}
+
+
+.mobile-nav {
+    position: fixed;
+    z-index: 98;
+    top: 0;
+    right: 200%;
+    width: 16%;
+    height: 100vh;
+    display: block;
+    padding-top: 120px;
+    transition: 0.8s;
+    background-color:#001a2389;
+}
+
+.mobile-nav.is-active {
+    translate: 5%;
+    left: 0;
+}
+
+.mobile-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: left;
+    padding: 12px 16px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.mobile-nav a:hover {
+    background-color: #5001814e;
+    display: block;
+}
+
+#bk {
+    height: 40px;
+    order: 1;
+    position: fixed;
+    left: 92%;
+    background-image: url(images/logo.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
+
+#bk a {
+    display:block;
+    font-size: 15px;
+    text-decoration: none;
+    color: transparent;
+    padding-bottom: 20px;
+}
+
+.brooklynn {
+    color: #A56EFF;
+}
+
+.bold {
+    font-weight: 400;  
+}
+
+#welcome {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    width: 75%;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 96px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    margin-top: 10px;
+    font-size: 36px;
+}
+
+.connect {
+    display:flex;
+    justify-content: right;
+    align-items: right;
+    margin-top: 25px;
+    margin-left: 33%;
+}
+
+#btn {
+    background:#001A23;
+    padding: 15px;
+    width: 250px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 42px;
+    color: #fff;
+    box-shadow: 0 4px 10px black;
+}
+
+#moreabt {
+    font-size: 32px;
+    color:#A56EFF;
+    margin-left: 20%;
+}
