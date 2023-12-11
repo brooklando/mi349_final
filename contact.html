@@ -14,7 +14,7 @@
   </head>
   <body>
     <!--top half of website-->
-    <div class="header2">
+    <div class="header">
       <nav class="bk">
         <a href="index.html">Home</a>
       </nav>
@@ -29,3 +29,17 @@
         </nav>
       </div>
     </div>
+    <!--contact form-->
+    <div class="contactcontainer">
+      <form action="https://formspree.io/f/xbjvnpqe" method="POST">
+        <h1>Contact Me</h1>
+        <input type="text" name="first" placeholder="First Name" autocomplete=off required>
+        <input type="text" name="last" placeholder="Last Name" autocomplete=off required>
+        <input type="email" name="email" placeholder="Email Address" autocomplete=off>
+        <textarea name="message" id="" cols="60" rows="5" placeholder="Enter Text" autocomplete=off required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
